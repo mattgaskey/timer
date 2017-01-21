@@ -17,7 +17,8 @@ $(document).ready(function() {
 	var breakTimerSec = $('.timer2-2');
 							 
 	workDown
-		.click(function () {	
+		.click(function (e) {	
+			e.preventDefault();
 			if (workTime > 1) {
 				workTime -= 1;
 				$('div.work-time-display').html(workTime);
@@ -33,7 +34,8 @@ $(document).ready(function() {
 		});
 	
 	workUp
-		.click(function () {	
+		.click(function (e) {
+			e.preventDefault();	
 			if (workTime < 60) {
 				workTime += 1;
 				$('div.work-time-display').html(workTime);
@@ -49,7 +51,8 @@ $(document).ready(function() {
 		});
 	
 	breakDown
-		.click(function () {
+		.click(function (e) {
+			e.preventDefault();
 			if (breakTime > 1) {
 				breakTime -= 1;
 				$('div.break-time-display').html(breakTime);
@@ -65,7 +68,8 @@ $(document).ready(function() {
 			});
 	
 	breakUp
-		.click(function () {
+		.click(function (e) {
+			e.preventDefault();
 			if (breakTime < 60) {
 				breakTime += 1;
 				$('div.break-time-display').html(breakTime);
