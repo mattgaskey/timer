@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 	
 	var workTime = parseInt($('div.work-time-display').html());
 	var breakTime = parseInt($('div.break-time-display').html());
