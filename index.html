@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pomodoro Clock</title>
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js.js"></script>
+
+</head>
+
+<body>
+		<div class="start">Start</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header"><span><img src="images/tomato.png" width="60px" class="tomato"></span>Pomodoro Clock<span><img src="images/tomato.png" width="60px" class="tomato" </span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-6">
+					<div class="set-left">Set Work Interval
+						<div class="row set-work-time">
+							<div class="col-xs-4">
+								<a href="#" class="work-down"><span>-</span></a>
+							</div>
+							<div class="col-xs-4">
+								<div class="work-time-display">25</div>
+							</div>
+							<div class="col-xs-4">
+								<a href="#" class="work-up"><span>+</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<div class="set-right">Set Break Interval
+						<div class="row set-break-time">
+							<div class="col-xs-4">
+								<a href="#" class="break-down"><span>-</span></a>
+							</div>
+							<div class="col-xs-4">
+								<div class="break-time-display">5</div>
+							</div>
+							<div class="col-xs-4">
+								<a href="#" class="break-up"><span>+</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-6">
+					<div class="work clock-left">WORK
+						<div class="display-work-clock">
+							<div class="timer1-1">25</div>
+							<span>:</span>
+							<div class="timer1-2">00</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<div class="break clock-right">BREAK
+						<div class="display-break-clock">
+							<div class="timer2-1">5</div>
+							<span>:</span>
+							<div class="timer2-2">00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both"></div>
+		<div class="container footer">
+			<h5>Created and coded by <a href="https://mattgaskey.github.io" target="_blank">Matt Gaskey</a>.</h5>
+		</div>
+	</body>
+</html>

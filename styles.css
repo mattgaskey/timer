@@ -1,0 +1,248 @@
+html {
+  display: table;
+  width: 100%;
+}
+
+body {
+  display: table-cell;
+  background: #262228;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+}
+body [class^="col-"] {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.header {
+  position: relative;
+  height: 100px;
+  margin: 6px 50px 0;
+  font-size: 40px;
+  line-height: 90px;
+}
+
+[class^='set'] {
+  height: 200px;
+  margin: 6px 50px 0;
+  background: #0375b4;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+[class*="clock-"] {
+  height: 200px;
+  margin: 6px 50px 0;
+  background: #007849;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+[class^="display-"] {
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+[class^="display-"] div, [class^="display-"] span {
+  display: inline;
+  margin: 0;
+}
+
+.set-work-time, .set-break-time {
+  margin-top: 15px;
+}
+
+a:link, a:hover, a:active, a:focus, a:visited {
+  color: white;
+  text-decoration: none;
+}
+a span {
+  font-size: 80px;
+}
+
+[class*="time-display"] {
+  font-size: 80px;
+}
+
+.work-down, .break-down {
+  float: right;
+}
+.work-down span, .break-down span {
+  color: #262228;
+}
+
+.work-up, .break-up {
+  float: left;
+}
+.work-up span, .break-up span {
+  color: #262228;
+}
+
+.start, .pause, .resume {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  z-index: 10;
+  top: 240px;
+  left: 50%;
+  margin-left: -75px;
+  background: #262228;
+  border-radius: 50%;
+  font-size: 26px;
+  color: white;
+  line-height: 150px;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+[class*='left'] {
+  margin-right: 0;
+  margin-left: 150px;
+}
+
+[class*='right'] {
+  margin-left: 0;
+  margin-right: 150px;
+}
+
+.set-left {
+  border-radius: 15px 0 0 0;
+}
+
+.set-right {
+  border-radius: 0 15px 0 0;
+}
+
+.clock-right {
+  border-radius: 0 0 15px 0;
+}
+
+.clock-left {
+  border-radius: 0 0 0 15px;
+}
+
+@media (max-width: 1080px) {
+  [class*='left'] {
+    margin-left: 120px;
+  }
+
+  [class*='right'] {
+    margin-right: 120px;
+  }
+}
+@media (max-width: 880px) {
+  [class*='left'] {
+    margin-left: 80px;
+  }
+
+  [class*='right'] {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 720px) {
+  [class*='left'] {
+    margin-left: 60px;
+  }
+
+  [class*='right'] {
+    margin-right: 60px;
+  }
+
+  .start, .pause, .resume {
+    height: 120px;
+    width: 120px;
+    top: 255px;
+    margin-left: -60px;
+    line-height: 120px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    font-size: 30px;
+  }
+
+  [class*='left'] {
+    margin-left: 20px;
+  }
+
+  [class*='right'] {
+    margin-right: 20px;
+  }
+
+  [class*="display-"] span {
+    font-size: 36px;
+  }
+
+  [class^="timer"] {
+    font-size: 36px;
+  }
+
+  [class*="time-display"] {
+    font-size: 46px;
+    padding-top: 15px;
+  }
+
+  .work-down span, .break-down span, .work-up span, .break-up span {
+    font-size: 66px;
+  }
+}
+@media (max-width: 460px) {
+  .header {
+    font-size: 22px;
+    margin: 0;
+    width: 100%;
+  }
+
+  [class^='set'] {
+    margin: 6px 0 0 0;
+  }
+
+  [class*="clock-"] {
+    margin: 6px 0 0 0;
+  }
+
+  .start, .pause, .resume {
+    height: 100px;
+    width: 100px;
+    top: 260px;
+    margin-left: -50px;
+    line-height: 100px;
+  }
+}
+@media (max-width: 333px) {
+  .header {
+    font-size: 26px;
+  }
+  .header .tomato {
+    display: none;
+  }
+
+  [class*="display-"] span {
+    font-size: 26px;
+  }
+
+  [class^="timer"] {
+    font-size: 26px;
+  }
+
+  [class*="time-display"] {
+    font-size: 36px;
+    padding-top: 10px;
+  }
+
+  .work-down span, .break-down span, .work-up span, .break-up span {
+    font-size: 46px;
+  }
+
+  .start, .pause, .resume {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    margin-left: -40px;
+    top: 270px;
+    font-size: 18px;
+  }
+}

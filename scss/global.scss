@@ -1,0 +1,83 @@
+html {
+  display: table;
+	width: 100%
+}
+
+body {
+	display: table-cell;
+  background: #000;
+	text-align: center;
+	color: white;
+		[class^="col-"] {
+			padding-left: 3px;
+			padding-right: 3px;
+		}
+}
+
+.header {
+	position: relative;
+	height: 100px;
+	margin-top: 40px;
+	background: red;
+	font-size: 40px;
+	line-height: 90px;
+}
+.set  {
+	height: 200px;
+	margin-top: 6px;
+	background: blue;
+}
+.clock {
+	height: 400px;
+	margin-top: 6px;
+	background: green;
+}
+[class^="display-"] {
+	width: 75%;
+	height: 75%;
+	border: white solid 1px;
+	margin: 20px auto;
+	div, span {
+		display: inline;
+		margin-top: 20%;
+	}
+}
+	
+.set-work-time, .set-break-time {
+	margin-top: 15px;
+}
+a {
+	&:link, &:hover, &:active, &:focus, &:visited {
+		color: white;
+		text-decoration: none;
+	}
+	span {
+		font-size: 80px;
+	}
+}
+[class*="time-display"] {
+	font-size: 80px;
+}
+.work-down, .break-down {
+	float: right;
+}
+.work-up, .break-up {
+	float: left;
+}
+
+.start, .pause, .resume {
+	position: absolute;
+	height: 14%;
+	width: 14%;
+	z-index: 10;
+	top: 288px;
+	margin-left: 43%;
+	background: white;
+	border-radius: 50%;
+	font-size: 26px;
+	color: black;
+	line-height: 115px;
+	text-transform: uppercase;
+	cursor: pointer;
+	pointer-events: all;
+}
